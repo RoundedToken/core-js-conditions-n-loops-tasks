@@ -404,7 +404,7 @@ function getSpiralMatrix(size) {
 
   while (v < size ** 2) {
     if (direction === 'right') {
-      while (true) {
+      while (Infinity) {
         const next = matrix[row][col + 1];
         matrix[row][col] = v;
         v += 1;
@@ -419,7 +419,7 @@ function getSpiralMatrix(size) {
     }
     if (v > size ** 2) break;
     if (direction === 'down') {
-      while (true) {
+      while (Infinity) {
         const next = matrix[row + 1];
         matrix[row][col] = v;
         v += 1;
@@ -434,7 +434,7 @@ function getSpiralMatrix(size) {
     }
     if (v > size ** 2) break;
     if (direction === 'left') {
-      while (true) {
+      while (Infinity) {
         const next = matrix[row][col - 1];
         matrix[row][col] = v;
         v += 1;
@@ -449,7 +449,7 @@ function getSpiralMatrix(size) {
     }
     if (v > size ** 2) break;
     if (direction === 'top') {
-      while (true) {
+      while (Infinity) {
         const next = matrix[row - 1];
         matrix[row][col] = v;
         v += 1;
